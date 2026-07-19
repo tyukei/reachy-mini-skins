@@ -2,8 +2,8 @@
 
 The pineapple costume is split into two printable parts:
 
-- `stl/reachy_mini_pineapple_body_front.stl` — textured yellow body shell
-- `stl/reachy_mini_pineapple_leaf_crown.stl` — green leafy head crown
+- `pineapple/stl/reachy_mini_pineapple_body_front.stl` — textured yellow body shell
+- `pineapple/stl/reachy_mini_pineapple_leaf_crown.stl` — green leafy head crown
 
 Both are accessories for an assembled robot; they do not replace structural parts.
 
@@ -49,14 +49,14 @@ Printer tolerances vary. To increase clearance, regenerate with:
 ```bash
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
-.venv/bin/python generate_pineapple_skin.py --head-clearance 1.5 --body-clearance 2.0
+.venv/bin/python pineapple/generate_pineapple_skin.py --head-clearance 1.5 --body-clearance 2.0
 ```
 
 ## Viewing
 
 ```bash
-./view-stl.sh stl/reachy_mini_pineapple_body_front.stl
-./view-stl.sh stl/reachy_mini_pineapple_leaf_crown.stl
+./view-stl.sh pineapple/stl/reachy_mini_pineapple_body_front.stl
+./view-stl.sh pineapple/stl/reachy_mini_pineapple_leaf_crown.stl
 ```
 
-The editable parametric source is `generate_pineapple_skin.py`.
+The editable parametric source is `pineapple/generate_pineapple_skin.py`.

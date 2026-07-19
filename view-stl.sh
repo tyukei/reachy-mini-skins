@@ -5,7 +5,7 @@ project_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 viewer_root="$project_dir/../.local/fstl"
 
 if [[ $# -eq 0 ]]; then
-    set -- "$project_dir/stl/reachy_mini_ninja_hood.stl"
+    set -- "$project_dir/ninja/stl/reachy_mini_ninja_hood.stl"
 fi
 
 if command -v fstl >/dev/null 2>&1; then

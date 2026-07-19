@@ -3,9 +3,13 @@
 
 from pathlib import Path
 import argparse
+import sys
 import numpy as np
 import trimesh
 
+# Reuse the verified geometry and manifold helpers from the ninja generator.
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "ninja"))
 from generate_ninja_skin import (
     box,
     cylinder,
